@@ -1,7 +1,8 @@
 function createDreamTeam(members) {
+  if (!Array.isArray(members)) return false;
   let dreamTeam = '';
-  for (let i = 0; i < members.length; i++) {
-    if (typeof members[i] == "string") {
+  for (let memberStr of members) {
+    if (typeof memberStr == "string") {
       dreamTeam += members[i].split(' ').join('')[0];
     }
   }
@@ -9,7 +10,7 @@ function createDreamTeam(members) {
   return dreamTeam;
  
 };
-return Array.isArray(members);
+
 
 
 
