@@ -20,6 +20,7 @@ const chainMaker = {
     this.newchainMaker.splice(position-1,1);
     return this;
   },
+  
   reverseChain() {
     this.newchainMaker.reverse();
   return this;
